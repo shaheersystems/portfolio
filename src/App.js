@@ -1,11 +1,13 @@
 import "./App.css";
+import Navbar from "./components/Navbar";
 import Wrapper from "./components/Wrapper";
-import Sidebar from "./components/Sidebar";
+import Banner from "./components/Banner";
 function App() {
   return (
     <div className="App">
+      <Navbar />
       <Wrapper>
-        <Sidebar />
+        <Banner />
       </Wrapper>
     </div>
   );

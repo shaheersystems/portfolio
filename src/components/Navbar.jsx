@@ -7,8 +7,11 @@ function Navbar() {
         <div className="logo">
           <h2>Shaheer.</h2>
         </div>
-        <div className="icon">
-          <span class="material-icons">sunny</span>
+        <div className="links">
+          <a href="/">Home</a>
+          <a href="/">About</a>
+          <a href="/">Projects</a>
+          <a href="/">Skills</a>
         </div>
       </div>
     </div>
