@@ -11,7 +11,7 @@
   font-family: "Material Icons";
   font-weight: normal;
   font-style: normal;
-  font-size: 25px; /* Preferred icon size */
+  font-size: 23px; /* Preferred icon size */
   display: inline-block;
   line-height: 1;
   text-transform: none;
@@ -19,6 +19,7 @@
   word-wrap: normal;
   white-space: nowrap;
   direction: ltr;
+  margin: 0px 10px;
 
   /* Support for all WebKit browsers. */
   -webkit-font-smoothing: antialiased;
@@ -52,7 +53,7 @@
 }
 .links a {
   text-decoration: none;
-  color: #666666;
+  color: #000000;
   font-style: 14px;
   font-family: "Roboto", calibri;
   padding: 5px 25px;
@@ -61,25 +62,34 @@
 .banner {
   height: 92vh;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .fig svg {
-  height: 200px;
+  height: 300px;
 }
 .banner h1 {
   font-family: "Mulish", calibri;
-  font-size: 45px;
+  font-size: 55px;
 }
 .banner p {
   font-size: 20px;
 }
 .banner a {
   text-decoration: none;
-  color: white;
-  background: #2250f4;
   display: inline-flex;
   font-size: 20px;
-  padding: 10px 25px;
+  padding: 7px 25px;
+  color: rgb(255, 255, 255);
   border-radius: 5px;
+  background: #000;
+  border: 1px solid transparent;
+}
+.banner a:hover {
+  border-color: black;
+  transition: 0.2s all;
+  color: black;
+  background: white;
 }
 .git {
   font-family: "Roboto", calibri;
@@ -90,4 +100,46 @@
   justify-content: center;
   gap: 30px;
   flex-direction: column;
+}
+.about-text {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-direction: column;
+}
+.fig img {
+  height: 400px;
+}
+.about {
+  border-top: 1px solid rgb(175, 175, 175);
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.about-text h1 {
+  font-family: "Mulish", calibri;
+  font-size: 55px;
+}
+.about-text p {
+  font-size: 20px;
+}
+.about-text a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  display: inline-flex;
+  font-size: 20px;
+  background: #000;
+  padding: 7px 25px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+}
+.about-text a:hover {
+  border-color: black;
+  transition: 0.2s all;
+  background: rgb(255, 255, 255);
+  color: black;
+}
+.about img {
+  height: 300px;
 }
