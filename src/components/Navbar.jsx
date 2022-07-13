@@ -5,13 +5,15 @@ function Navbar() {
     <div className="nav-wrap">
       <div className="nav">
         <div className="logo">
-          <h2>Shaheerinit.</h2>
+          <h2>Shaheer.</h2>
+        </div>
+        <div className="links">
+          <a href="/">Projects</a>
+          <a href="/">Skills</a>
+          <a href="/">About</a>
         </div>
         <div className="icon">
-          <select name="" id="">
-            <option value="light">Light</option>
-            <option value="light">Dark</option>
-          </select>
+          <span className="material-icons">email</span>
         </div>
       </div>
     </div>

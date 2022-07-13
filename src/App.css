@@ -20,6 +20,8 @@
   word-wrap: normal;
   white-space: nowrap;
   direction: ltr;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
   margin: 0px 10px;
   padding: 5px;
   border-radius: 100%;
@@ -39,6 +41,10 @@
   transition: 0.2s all;
   background: rgba(0, 0, 0, 0.096);
 }
+.nav-wrap {
+  height: 10vh;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
 .nav {
   max-width: 90%;
   margin: auto;
@@ -47,65 +53,48 @@
   height: 10vh;
   justify-content: space-between;
 }
-select {
-  border: none;
-  padding: 5px 10px;
-  border-radius: 3px;
-  outline: none;
-  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
-    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+.logo h2 {
+  color: #152246;
+  font-family: "Mulish", calibri;
 }
-option {
-  padding: 5px 10px;
+.icon span {
+  color: #152246;
 }
-option:hover {
-  background: black;
-}
-.tab-bar {
-  height: 7vh;
-  max-width: 90%;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  position: sticky;
-  top: 0%;
-  background: white;
-}
-.tab-bar a {
-  padding: 5px 15px;
-  color: #444;
-  text-decoration: none;
-  border-radius: 3px;
-  font-size: 14px;
-}
-.tab-bar a:hover {
-  transition: 0.2s all;
-  background: rgba(0, 0, 0, 0.151);
-  color: rgb(0, 0, 0);
-}
-.search {
-  height: 12vh;
-  max-width: 90%;
-  margin: auto;
-  display: flex;
-  align-items: center;
-}
-.search input {
-  width: 100%;
-  padding: 10px 15px;
-  border-radius: 3px;
-  outline: none;
-  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
-    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-  border: 1px solid transparent;
-}
-.search input:focus {
-  border-color: black;
-  box-shadow: none;
-}
-::placeholder {
-  font-size: 16px;
-}
-.active {
+.links a {
+  padding: 5px 25px;
   font-weight: 600;
+  text-decoration: none;
+  color: #a1a4b0;
+}
+.links a:hover {
+  color: #152246;
+  transition: 0.2s all;
+}
+.banner {
+  max-width: 90%;
+  margin: auto;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.banner h1 {
+  font-family: "Mulish", calibri;
+  font-size: 60px;
+  color: #152246;
+  text-align: center;
+}
+.banner p {
+  text-align: center;
+  font-size: 18px;
+}
+.banner a {
+  padding: 8px 25px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  background: #152246;
+  border-radius: 50px;
 }
